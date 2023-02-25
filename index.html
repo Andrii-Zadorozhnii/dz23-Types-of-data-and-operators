@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section>
+      <h2>Minimum.</h2>
+      <h5>1. Add 0.1 and 0.2 to get a mathematically correct answer.</h5>
+      <p class="unswerC"></p>
+      <h5>
+        2. Add the string "1" and the digit 2 (both operands must be in
+        variables), and get a mathematically correct answer.
+      </h5>
+      <p>"1" + 2 = <span class="unswerMinimum2"></span></p>
+
+      <h5>
+        3. The user specifies the size of the flash drive in GB. The program
+        should calculate how many files of 820 MB size can be placed on the
+        flash drive.
+      </h5>
+      <div class="section-files">
+        <p>Size of the flash drive in GB :</p>
+        <input class="usb-size__gb-input" type="number" />
+      </div>
+      <div class="section-files">
+        <p>Files weight in MB :</p>
+        <input class="file-size__gb-input" type="number" />
+      </div>
+      <button class="calculate-button">Calculate</button>
+      <div class="section-files">
+        <p>Files can be placed on the flash drive :</p>
+        <span class="total-files__input"></span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Medium</h2>
+      <h5>
+        1. The user enters the amount of money in the wallet and the price of
+        one chocolate bar. The program prints how many chocolates the user can
+        buy and how much change he will have left.
+      </h5>
+
+      <div class="section-files">
+        <p>Amount of money in the wallet :</p>
+        <input class="money-pocket" type="number" />
+      </div>
+      <div class="section-files">
+        <p>Price of one chocolate bar :</p>
+        <input class="chocolate-bar-price" type="number" />
+      </div>
+      <button class="chocolate-bar-button">Calculate 🍫</button>
+      <div class="section-files">
+        <p>Chocolates the user can buy :</p>
+        <span class="chocolates-buy"></span>
+      </div>
+      <div class="section-files">
+        <p>Change he will have left :</p>
+        <span class="changes-left"></span>
+      </div>
+
+      <h5>
+        2. Ask the user for a three-digit number and print it backwards. To
+        solve the problem, you will need the % operator (remainder of division).
+      </h5>
+      <div class="section-files">
+        <p>Please write three-digit number :</p>
+        <input class="digital-number" type="number" />
+      </div>
+      <button class="digital-number__button">Make it backwards </button>
+      <p>Backwards number: </p>
+      <span class="digital-number__backwards"></span>
+    </section>
+
+    <section>
+      <h2>Maximum</h2>
+      <div class="section-files">
+        <p>Please write money for deposit :</p>
+        <input class="deposit-money" type="number" />
+      </div>
+      <div class="section-files">
+        <p>Deposit time :</p>
+        <input class="deposit-time" type="number" />
+      </div>
+      <div class="section-files">
+      <p> Deposit rate per year : 5%</p>
+      <button class="money-calculation__button">Calculate Money</button>
+    </div>
+    <p> You will receave money:</p>
+    </section>
+
+    <script src="./js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button, digital-number__backwards{
+    padding: 5px;
+    position: relative;
+    left: 310px;
+    @media screen and (max-width: 553px){
+        position: relative;
+        left: 0;
+    }
+}
+section{
+    margin-bottom: 50px;
+}
+
+p{
+    margin: 10px 0;
+    min-width: 300px;
+}
+h2{
+    margin-bottom: 30px;
+}
+input{
+    align-self: center;
+}
+
+body{
+    padding: 50px;
+}
+
+.section-files{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.usb-size__gb-input, .file-size__gb-input, .total-files__input{
+    height: 20px;
+}
+
+span{
+    margin: auto 0;
+}
+
+.money-calculation__button{
+    left: 0px;
+}
