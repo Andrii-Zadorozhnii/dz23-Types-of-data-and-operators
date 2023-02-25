@@ -8,7 +8,7 @@ Minimum.
 
 Medium.
 
-1.The user enters the amount of money in the wallet and the price of one chocolate bar. The program prints how many chocolates the user can buy and how much change he will have left.
+1. The user enters the amount of money in the wallet and the price of one chocolate bar. The program prints how many chocolates the user can buy and how much change he will have left.
 2. Ask the user for a three-digit number and print it backwards. To solve the problem, you will need the % operator (remainder of division).
 
 Maximum.
