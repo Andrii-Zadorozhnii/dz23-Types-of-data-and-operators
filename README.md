@@ -16,8 +16,8 @@ Maximum.
 1. The user enters the amount of a deposit in a bank for 2 months, with an interest rate of 5% per annum. Print the amount of accrued interest.
 2. What will the expressions return:
 
-2 && 0 && 3
+  2 && 0 && 3
 
-2 || 0 || 3
+  2 || 0 || 3
 
-2 && 0 || 3
+  2 && 0 || 3
