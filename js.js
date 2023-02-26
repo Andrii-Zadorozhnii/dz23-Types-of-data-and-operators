@@ -17,7 +17,7 @@ let c = a + b
 
 console.log(c);
 
-document.getElementsByClassName("unswerC")[0].innerHTML = c;
+document.getElementsByClassName("unswerC")[0].innerHTML = c.toFixed(2);
 
 //__2__//
 
@@ -38,7 +38,7 @@ calculateButton.onclick = function () {
     let usbSizeValue = +usbSize.value;
     let finalFileSizeValue = +finalFileSize.value;
     let files = (usbSizeValue * 1000) / finalFileSizeValue;
-    document.getElementsByClassName("total-files__input")[0].innerHTML = files;
+    document.getElementsByClassName("total-files__input")[0].innerHTML = files.toFixed(0);
 }
 
 
@@ -63,8 +63,8 @@ chocolateCalculationButton.onclick = function () {
     let chocolateCalculation = Math.floor( moneyAtPocketValue / chocolateBarPriceValue);
     let moneyLeft = moneyAtPocketValue - (chocolateCalculation * chocolateBarPriceValue);
 
-    document.getElementsByClassName("chocolates-buy")[0].innerHTML = chocolateCalculation;
-    document.getElementsByClassName("changes-left")[0].innerHTML = moneyLeft;
+    document.getElementsByClassName("chocolates-buy")[0].innerHTML = chocolateCalculation.toFixed(0);
+    document.getElementsByClassName("changes-left")[0].innerHTML = moneyLeft.toFixed(2);
 }
 
 //__2__//
@@ -78,6 +78,7 @@ digitalNumberButton.onclick = function () {
     let reversedigitalNumberValue = digitalNumberValue.reverse().join("");
     console.log(reversedigitalNumberValue);
     document.getElementsByClassName("digital-number__backwards")[0].innerHTML = reversedigitalNumberValue;
+
 }
 
 
@@ -89,9 +90,29 @@ Maximum.
 
 2. What will the expressions return:
 
-2 && 0 && 3
+                                    2 && 0 && 3
 
-2 || 0 || 3
+                                    2 || 0 || 3
 
-2 && 0 || 3
+                                    2 && 0 || 3
 */
+
+//__1__//
+
+
+let depositMoney = document.querySelector(".deposit-money");
+let depositTime = document.querySelector(".deposit-time");
+let yearPersent = document.querySelector(".deposit-persent");
+let depositCalculationButton = document.querySelector(".money-calculation__button");
+
+
+depositCalculationButton.onclick = function() {
+    let depositTimeValue = +depositTime.value * 30.418;
+    let depositMoneyValue = +depositMoney.value;
+    let yearPersentValue = +yearPersent.value;
+    // let yearPersentValue2 = +yearPersent.value / 100;
+    console.log(yearPersentValue);
+    let finalMoney = (depositMoneyValue * yearPersentValue * depositTimeValue / 365) / 100;
+    console.log(finalMoney); 
+    document.getElementsByClassName("receave-money")[0].innerHTML = finalMoney.toFixed(2);
+}
