@@ -115,4 +115,5 @@ depositCalculationButton.onclick = function() {
     let finalMoney = (depositMoneyValue * yearPersentValue * depositTimeValue / 365) / 100;
     console.log(finalMoney); 
     document.getElementsByClassName("receave-money")[0].innerHTML = finalMoney.toFixed(2);
+    console.log(finalMoney.toFixed(2));
 }
